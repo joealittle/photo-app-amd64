@@ -1,0 +1,43 @@
+{
+  "name": "bbc-box-photo-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "/bbc-box-photo-app/ui",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "node-databox": "0.9.0",
+    "node-sass": "^4.11.0",
+    "path": "^0.12.7",
+    "react": "^16.7.0",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.7.0",
+    "react-grid-gallery": "^0.5.3",
+    "react-images": "^0.5.19",
+    "react-photo-gallery": "^6.3.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.3",
+    "react-stack-grid": "^0.7.1",
+    "styled-components": "^4.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build-dev": "react-scripts build && docker cp ./build/. 6e1cafe0a2f6:/app/build/",
+    "start-server": "nodemon ./server.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "manifest-version": 1,
+  "name": "bbc-box-photo-app",
+  "docker-registry":"joealittle",
+  "docker-image-tag":"latest",
+  "version": "0.1.0",
+  "description": "photo gallery app",
+  "author": "BBC",
+  "licence": "MIT",
+  "databox-type": "app",
+  "tags": [
+  "flickr"
+  ],
+  "homepage": "https://github.com/bbc/bbc-box-photo-app",
+  "repository": {
+  "type": "git",
+  "url": "git+https://github.com/bbc/bbc-box-photo-app.git"
+  },
+  "datasources": [
+    {
+			"type": "instagram::photoData",
+			"required": true,
+			"name": "instagram photo metadata",
+			"clientid": "InstagramDatastore",
+			"granularities": []
+    },
+		{
+			"type": "flickr::photodata",
+			"required": true,
+			"name": "Flickr data",
+			"clientid": "FlickrDataStore",
+			"granularities": []
+    }
+  ],
+  "network-permissions": [],
+  "resource-requirements": {},
+  "volumes": [],
+  "export-whitelist": []
+  }

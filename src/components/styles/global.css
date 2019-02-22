@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'BBC Reith';
+  src: url('../../fonts/ReithSans_W_Lt.woff2') format("woff2");
+  font-display: swap;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'BBC Reith';
+  src: url('../../fonts/ReithSans_W_Rg.woff2') format("woff2");
+  font-display: swap;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'BBC Reith';
+  src: url('../../fonts/ReithSans_W_Bd.woff2') format("woff2");
+  font-display: swap;
+  font-weight: 700;
+}
+
+body {
+  color: #000;
+  font-family: 'BBC Reith', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background: #ffefd5;
+  color: #404040;
+}
+
+.mapboxgl-ctrl-geocoder {
+  display: inline-block;
+}
+
+.mapboxgl-ctrl-group {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: bottom;
+}
+
+.mapboxgl-ctrl-group > button {
+  height: 40px;
+  width: 40px;
+}
+
+.mapboxgl-ctrl-geocoder input[type='text'] {
+  font-size: 16px;
+}
+
+
